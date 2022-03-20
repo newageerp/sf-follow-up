@@ -1,5 +1,5 @@
 <?php
-namespace Newageerp\SfFollowUp\Object
+namespace Newageerp\SfFollowUp\Object;
 
 use Newageerp\SfBaseEntity\Object\BaseEntity;
 use Doctrine\ORM\Mapping as ORM;
