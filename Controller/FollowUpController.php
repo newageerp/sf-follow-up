@@ -1,6 +1,6 @@
 <?php
 
-namespace Newageerp\SfFollowUp\FollowUpController;
+namespace Newageerp\SfFollowUp\Controller;
 
 use Newageerp\SfBaseEntity\Controller\OaBaseController;
 use Newageerp\SfFollowUp\Object\BaseFollowUp;
