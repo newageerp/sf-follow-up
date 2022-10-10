@@ -98,6 +98,8 @@ class FollowUpController extends OaBaseController
 
             $this->getEm()->flush();
 
+            $this->sendSocketPool();
+
             return $this->json(['success' => 1]);
         } catch (\Exception $e) {
             return $this->json(['success' => 0, 'e' => $e->getMessage(), 'f' => $e->getFile(), 'l' => $e->getLine()]);
@@ -136,6 +138,8 @@ class FollowUpController extends OaBaseController
             }
             $this->getEm()->remove($element);
             $this->getEm()->flush();
+
+            $this->sendSocketPool();
 
             return $this->json(['success' => 1]);
         } catch (\Exception $e) {
